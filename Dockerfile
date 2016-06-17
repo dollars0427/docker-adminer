@@ -1,7 +1,7 @@
 FROM ubuntu-debootstrap:14.04
 MAINTAINER Christian Lück <christian@lueck.tv>
 
-RUN sed -i 's/archive.ubuntu.com/ubuntu.stu.edu.tw\/ubuntu/g' /etc/apt/sources.list
+RUN sed -i 's/archive.ubuntu.com/free.nchc.org.tw\/ubuntu/g' /etc/apt/sources.list
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   nginx supervisor php5-fpm php5-cli \
